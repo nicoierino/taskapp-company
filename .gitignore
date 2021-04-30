@@ -13,6 +13,7 @@ node_modules/
 .history/
 .tmp/
 .docs/
+.vscode/
 
 # OS or Editor folders
 .DS_Store
