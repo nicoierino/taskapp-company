@@ -1,0 +1,44 @@
+.page-section {
+    padding: 5em 0;
+    background-color: $backgroundColor;
+
+    @mixin atMedium {
+        padding: 4.5em 0;
+    }
+
+    @mixin atLarge {
+        padding: 10em 0;
+    }
+
+    &--dark-gray {
+        background-color: $nightBlue;
+        color: white;
+    }
+
+    &--blue {
+        background-color: $mainBlue;
+        color: white;
+    }
+
+    &--no-bottom-padding {
+        padding-bottom: 0;
+    }
+
+    &--top-padding-until-medium {
+        @mixin atMedium {
+            padding-top: 0;
+        }
+    }
+
+    &__title {
+        display: block;
+        letter-spacing: .05em;
+        font-weight: 700;
+        font-size: 1.7rem;
+
+        @mixin atSmall {
+            font-size: 2rem;
+        }
+
+    }
+}

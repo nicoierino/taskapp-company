@@ -1,0 +1,91 @@
+.hero {
+    padding: 2em 0;
+
+    text-align: center;
+
+    @mixin atSmall {
+        padding: 4em 0;
+    }
+
+    @mixin atMedium {
+        text-align: left;
+    }
+
+    &__subheader {
+        color: $mainGray;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .3em;
+        font-size: 1rem;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+
+        @mixin atMedium {
+            font-size: 1.3rem;
+        }
+
+    }
+
+    &__header {
+        line-height: 1.4em;
+        font-size: 1.7rem;
+
+        @mixin atSmallest {
+            font-size: 2.1rem;
+        }
+
+        @mixin atSmall {
+            font-size: 2.6rem;
+        }
+
+    }
+
+    &__watch-video {
+        color: black;
+        display: block;
+        margin-top: 2.5em;
+        text-decoration: underline;
+        font-size: .9rem;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+
+        @mixin atMedium {
+            display: inline-block;
+            margin-left: .76em;
+        }
+
+        @mixin atLarge {
+            margin-left: 1.5em;
+        }
+
+        img {
+            margin-right: .3em;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.75;
+        }
+
+    }
+
+
+    &__img {
+        width: 70%;
+        margin-top: 3em;
+
+        @mixin atSmall {
+            width: 50%;
+        }
+
+        @mixin atMedium {
+            margin-top: 0;
+            margin-left: 5em;
+            width: 40%;
+        }
+    }
+}

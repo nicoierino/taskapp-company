@@ -1,0 +1,37 @@
+.wrapper {
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 976px;
+
+    @mixin atSmallest {
+        padding: 0 2rem;
+    }
+
+    @mixin atSmall {
+        padding: 0 3rem;
+    }
+
+    @mixin atMedium {
+        padding: 0 4rem;
+    }
+
+    &--narrow {
+        padding: 0rem;
+        max-width: 1200px;
+
+        @mixin atMedium {
+            padding: 0 2em;
+        }
+    }
+
+    &--no-padding-until-medium {
+        padding: 0;
+
+        @mixin atMedium {
+            padding: 0 4em;
+        }
+    }
+
+
+
+}

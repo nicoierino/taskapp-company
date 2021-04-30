@@ -1,0 +1,42 @@
+.features-list {
+
+    @mixin atSmallest {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    }
+
+    @mixin atLarge {
+        display: inline-block;
+    }
+
+    li {
+        margin-bottom: 1.5em;
+        margin-left: 2em;
+        position: relative;
+        font-size: 1.1rem;
+
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+
+        @mixin atLarge {
+            font-size: 1.4rem;
+            margin-bottom: 1.3em;
+        }
+
+        &:before {
+            content: '';
+            left: -2em;
+            top: -5px;
+            position: absolute;
+            width: 1.5em;
+            height: 1.5em;
+            background-image: url('./assets/images/icons/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+
+        }
+    }
+}

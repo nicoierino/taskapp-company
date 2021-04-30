@@ -1,0 +1,14 @@
+@mixin atMedium {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col+.col {
+        margin-left: 3.5rem;
+    }
+}

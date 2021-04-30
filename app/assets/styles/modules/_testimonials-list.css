@@ -1,0 +1,41 @@
+.testimonials-list {
+    color: white;
+
+    @mixin atMedium {
+        display: flex;
+    }
+
+    .testimonials-list__card {
+        background: $darkerBlue;
+        text-align: center;
+        padding: 2em 1em;
+        width: 80%;
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+
+        @mixin atMedium {
+            width: 100%;
+            margin-bottom: 0;
+            line-height: 1.5em;
+            padding: 2em 0;
+        }
+
+        &--no-margin-bottom {
+            margin-bottom: 0;
+        }
+
+        .testimonials-list__avatar {
+            width: 6em;
+            height: 6em;
+            border: 6px solid $darkerBlue;
+            border-radius: 50%;
+            margin-top: -4.5em;
+        }
+    }
+
+    .testimonials-list__card+.testimonials-list__card {
+        @mixin atMedium {
+            margin-left: 2em;
+        }
+    }
+}

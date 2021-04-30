@@ -1,0 +1,149 @@
+.navbar {
+    background-color: white;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+
+    @mixin atMedium {
+        align-items: baseline;
+    }
+
+    &__logo {
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+
+        span {
+            color: $mainBlue;
+        }
+
+    }
+
+    &__hamburger,
+    &__exit {
+        width: 1.5rem;
+
+
+        display: none;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            opacity: .75;
+        }
+
+        &--is-visible {
+            display: block;
+        }
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+
+    &__exit {
+        text-align: right;
+
+        &--is-visible {
+            margin-right: 1em;
+            margin-top: 1em;
+            margin-bottom: 4em;
+        }
+    }
+
+    &__menu-content {
+        visibility: hidden;
+        opacity: 0;
+
+        position: fixed;
+        z-index: 999;
+        width: 60%;
+        right: 0;
+        top: 0;
+        background: $nightBlue;
+        height: 100%;
+        padding: 1em;
+
+        &--is-visible {
+            visibility: visible;
+            opacity: 1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        @mixin atMedium {
+            visibility: visible;
+            opacity: 1;
+
+            flex-direction: unset;
+            position: unset;
+            z-index: unset;
+            background: unset;
+            height: unset;
+            padding: unset;
+
+            margin-left: 3em;
+            width: 100%;
+            display: flex;
+            place-content: space-between;
+        }
+    }
+
+    &__primary-nav,
+    &__secondary-nav {
+        li {
+            text-align: right;
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            text-align: right;
+            margin-bottom: .5em;
+            font-size: 1.1rem;
+
+
+            @mixin atSmall {
+                font-size: 1.3rem;
+            }
+
+            &:focus,
+            &:hover {
+                opacity: 0.75;
+            }
+
+        }
+
+        @mixin atMedium {
+            display: flex;
+
+            li {
+                text-align: unset;
+                color: unset;
+                display: block;
+                padding: unset;
+                font-size: unset;
+                text-align: unset;
+
+                &:hover,
+                &:focus {
+                    font-weight: unset;
+                    color: $darkGray;
+                }
+            }
+
+            li+li {
+                margin-left: 2em;
+            }
+
+        }
+    }
+}
