@@ -1,6 +1,7 @@
 # TaskApp-company
 
-TaskApp-company es una landing page en el que tomo un diseño de GarySimons y lo codeo de cero para que sea responsive.
+TaskApp-company es una landing page de una aplicación movil ficticia.
+Esta web esta basada en el diseño de GarySimons y la codeo de cero para que sea responsive.
 
 ![ScreenShot](https://raw.githubusercontent.com/nicoierino/taskapp-company/master/screenshot.png "ScreenShot")
 
