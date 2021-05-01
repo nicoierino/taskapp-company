@@ -1,5 +1,5 @@
 {
-  "name": "travel-site",
+  "name": "taskapp-company",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack serve",
