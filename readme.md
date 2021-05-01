@@ -10,7 +10,7 @@ Esta web esta basada en el diseño de GarySimons y la codeo de cero para que sea
 
 La demo está hosteada en netlify y usa Continuous Deployment por lo que se rebuildea y republica con cada cambio en la master branch
 
-[https://taskapp-company-demo.app/](https://taskapp-company-demo.app/)
+[https://https://taskapp-company-demo.netlify.app/](https://https://taskapp-company-demo.netlify.app/)
 
 ## Tecnologias usadas
 
