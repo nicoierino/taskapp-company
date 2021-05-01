@@ -7,6 +7,7 @@ Esta web esta basada en el diseño de GarySimons y la codeo de cero para que sea
 
 ## Demo
 
+La demo está hosteada en netlify y se rebuildea con cada cambio en la master branch
 [https://confident-thompson-129836.netlify.app/](https://confident-thompson-129836.netlify.app/)
 
 ## Tecnologias usadas
