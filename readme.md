@@ -22,6 +22,15 @@ Node, Webpack, postcss, babel, GiT y Netlify para deploy del demo
 node install
 ```
 
+## Build
+
+Crea la carpeta docs/ con el proyecto listo para ser publicado.
+Todo el código queda minificado, el javascript pasa por babel, todo el css se unifica en solo archivo y las reglas de css no utilizadas (si las hubiera) se descartan.
+
+```node
+npm run build
+```
+
 ## Webpack devServer para desarollo
 
 Webpack hostea localmente el proyecto en el puerto 3000 y se actualiza on-the-fly con cada cambio del codigo
@@ -30,13 +39,4 @@ Webpack hostea localmente el proyecto en el puerto 3000 y se actualiza on-the-fl
 
 ```node
 npm run dev
-```
-
-## Build (listo para publicar)
-
-Crea la carpeta docs/ con el proyecto listo para ser publicado.
-Todo el código queda minificado, el javascript pasa por babel, todo el css se unifica en solo archivo y las reglas de css no utilizadas (si las hubiera) se descartan.
-
-```node
-npm run build
 ```
